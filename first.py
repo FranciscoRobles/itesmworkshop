@@ -30,7 +30,7 @@ while 1:
       contador+=1;
       print contador;
       for chord_ind in range (0,2):
-      buzzer.playSound(chords[chord_ind], 1000000)
+          buzzer.playSound(chords[chord_ind], 1000000)
       #Random numbers
       from random import randint
       # RGB Red
