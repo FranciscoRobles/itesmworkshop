@@ -27,7 +27,7 @@ while 1:
     print button.name(), ' value is ', button.value()
     # Play sound (DO, RE, MI, etc.), pausing for 0.1 seconds between notes
     if(button.read()==1):
-      contador++;
+      contador+=1;
       print contador;
       for chord_ind in range (0,2):
       # play each note for one second
