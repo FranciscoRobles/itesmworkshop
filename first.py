@@ -4,16 +4,16 @@ import pyupm_grove as grove
 import pyupm_i2clcd as lcd
 
 # Create the buzzer object using GPIO pin 5
-buzzer = upmBuzzer.Buzzer(D3)
+buzzer = upmBuzzer.Buzzer(3)
 
 chords = [upmBuzzer.DO, upmBuzzer.RE, upmBuzzer.MI, upmBuzzer.FA, 
           upmBuzzer.SOL, upmBuzzer.LA, upmBuzzer.SI, upmBuzzer.DO, 
           upmBuzzer.SI];
 
 # Create the button object using GPIO pin 0
-button = grove.GroveButton(D2)
+button = grove.GroveButton(2)
 
-int contador = 0;
+contador = 0;
 
 # Initialize Jhd1313m1 at 0x3E (LCD_ADDRESS) and 0x62 (RGB_ADDRESS) 
 myLcd = lcd.Jhd1313m1(0, 0x3E, 0x62)
