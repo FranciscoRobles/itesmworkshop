@@ -38,7 +38,7 @@ while 1:
       myLcd.setCursor(1,2)
       myLcd.write('Hello World')
       time.sleep(1)
-     if(contador==5):
-               break
+    if(contador==5):
+      break
 del button
 del buzzer
