@@ -30,8 +30,7 @@ while 1:
       contador+=1;
       print contador;
       for chord_ind in range (0,2):
-      # play each note for one second
-          print buzzer.playSound(chords[chord_ind], 1000000)
+      buzzer.playSound(chords[chord_ind], 1000000)
       #Random numbers
       from random import randint
       # RGB Red
@@ -40,3 +39,5 @@ while 1:
       myLcd.setCursor(1,2)
       myLcd.write('Hello World')
       time.sleep(1)
+del button
+del buzzer
