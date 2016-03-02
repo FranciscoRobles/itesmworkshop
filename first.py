@@ -23,8 +23,7 @@ myLcd.setCursor(0,0)
 #myLcd.setColor(53, 39, 249)
 
 # Read the input and print, waiting one second between readings
-while 1:
-    print button.name(), ' value is ', button.value()
+while i=1:
     # Play sound (DO, RE, MI, etc.), pausing for 0.1 seconds between notes
     if(button.value()==1):
       contador+=1;
@@ -39,5 +38,7 @@ while 1:
       myLcd.setCursor(1,2)
       myLcd.write('Hello World')
       time.sleep(1)
+     if(contador==5):
+               break
 del button
 del buzzer
