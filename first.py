@@ -39,5 +39,4 @@ while 1:
       time.sleep(0.1)
       myLcd.setCursor(1,2)
       myLcd.write('Hello World')
-    
-  time.sleep(1)
+      time.sleep(1)
