@@ -23,7 +23,7 @@ myLcd.setCursor(0,0)
 #myLcd.setColor(53, 39, 249)
 
 # Read the input and print, waiting one second between readings
-while i=1:
+while 1:
     # Play sound (DO, RE, MI, etc.), pausing for 0.1 seconds between notes
     if(button.value()==1):
       contador+=1;
