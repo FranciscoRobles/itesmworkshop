@@ -28,17 +28,18 @@ while 1:
     if(button.value()==1):
       contador+=1;
       print contador;
+      myLcd.setColor(randint(0,255), randint(0,255), randint(0,255))
+      time.sleep(0.1)
+      myLcd.setCursor(1,2)
+      myLcd.write('Hello World')
       for chord_ind in range (0,2):
           buzzer.playSound(chords[chord_ind], 1000000)
       #Random numbers
       from random import randint
       # RGB Red
-      myLcd.setColor(randint(0,255), randint(0,255), randint(0,255))
-      time.sleep(0.1)
-      myLcd.setCursor(1,2)
-      myLcd.write('Hello World')
       time.sleep(1)
     if(contador==5):
+      myLcd.backlight('off')
       break
 del button
 del buzzer
